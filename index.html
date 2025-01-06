@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News with Sentiment Analysis</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>News with Sentiment Analysis</h1>
+     <!-- Form for selecting news category -->
+    <form id="typeForm">
+        <div class="category-options">
+            <label>
+                <input type="radio" value="business" name="type" class="radio"> Business
+            </label>
+            <label>
+                <input type="radio" value="health" name="type" class="radio"> Health
+            </label>
+            <label>
+                <input type="radio" value="science" name="type" class="radio"> Science
+            </label>
+            <label>
+                <input type="radio" value="general" name="type" class="radio"> General
+            </label>
+        </div>
+        <input type="submit" value="Submit">
+    </form>
+    <div class="quote">
+        "Freedom of the press is not just important to democracy, it is democracy."
+    </div>
+    <div id="news"></div>
+    <!-- Google AI API Script -->
+    <script src="https://www.googleapis.com/js/api.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
